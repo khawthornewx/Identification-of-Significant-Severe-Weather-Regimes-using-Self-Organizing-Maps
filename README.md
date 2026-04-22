@@ -12,7 +12,7 @@
 *Professor: Dr. Alex M. Haberlie*
 </div>
 
-**Abstract**: Significant severe weather can occur in a wide range of atmospheric environments, making it difficult to identify consistent signals using traditional methods. This study uses a self-organizing map (SOM) to classify environments associated with significant severe weather in the eastern United States. Environmental variables from the CONUS404 dataset, including 500 hPa heights, 2 m dewpoint, and 700–500 hPa lapse rates, are combined with practically perfect hindcast significant severe fields to isolate relevant conditions. A 5 by 5 SOM is then used to cluster these environments into representative patterns. 
+**ABSTRACT** Significant severe weather can occur in a wide range of atmospheric environments, making it difficult to identify consistent signals using traditional methods. This study uses a self-organizing map (SOM) to classify environments associated with significant severe weather in the eastern United States. Environmental variables from the CONUS404 dataset, including 500 hPa heights, 2 m dewpoint, and 700–500 hPa lapse rates, are combined with practically perfect hindcast significant severe fields to isolate relevant conditions. A 5 by 5 SOM is then used to cluster these environments into representative patterns. 
 
 The results are expected to reveal a limited number of physically meaningful regimes that capture different combinations of synoptic forcing, moisture, and instability. These findings provide a structured way to interpret severe weather environments and highlight the multiple pathways through which significant severe convection can occur. 
 
@@ -33,3 +33,6 @@ The results are expected to show that, while severe weather can happen in many s
   Given the complexity of these environments, pattern recognition techniques provide a useful way to organize the data and identify recurring structures in the atmosphere. These approaches allow for a more holistic view of how environmental conditions vary across events, rather than focus on individual variables in isolation. This is especially important for severe weather environments, which often do not follow a single, well defined pattern. 
 
   The goal of this study is to use machine learning techniques to identify and classify environmental regimes associated with significant severe weather (hail ≥ 2”, wind ≥ 60 MPH, and tornadoes EF2+) in the eastern CONUS. By examining how atmospheric conditions group together across many events, this study aims to identify recurring patterns that are conducive to significant severe weather and to better understand how these environments vary from case to case. This approach provides a structured way to analyze complex atmospheric conditions and offers insight into the range of environments that can support high-impact severe weather. 
+
+  ## **II. Data and Methods** ##
+
