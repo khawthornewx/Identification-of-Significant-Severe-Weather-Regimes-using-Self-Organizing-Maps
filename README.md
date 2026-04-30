@@ -86,7 +86,7 @@ The resulting environmental 5x5 SOM output shows ascending volatility in CAPE an
 </p>
 
 <p align="center">
-  <img src="Figures/Figure 3.png" width="700">
+  <img src="Figures/Figure 3.jpg" width="700">
   <br>
   <em>Fig. 3</em>
 </p>
