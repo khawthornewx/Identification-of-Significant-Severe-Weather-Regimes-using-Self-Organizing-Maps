@@ -7,7 +7,7 @@
 
  
 
-*Completed in partial completion of the course requirements for EAE 485/585, Data Science for the Geosciences*
+*Conducted in partial completion of the course requirements for EAE 485/585, Data Science for the Geosciences*
 
 *Professor: Dr. Alex M. Haberlie*
 </div>
