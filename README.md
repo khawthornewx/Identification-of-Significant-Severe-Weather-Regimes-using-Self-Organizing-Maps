@@ -1,9 +1,9 @@
 <div align='center'>
   
 # **Identification-of-Significant-Severe-Weather-Regimes-using-Self-Organizing-Maps** #
-*KELVIN T. HAWTHORNE, a LEXI GUTZWILER a*
+*KELVIN T. HAWTHORNE, <sup>a</sup> LEXI GUTZWILER <sup>a</sup>*
 
-*a Northern Illinois University, Department of Earth, Atmosphere, and Environment*
+*<sup>a</sup> Northern Illinois University, Department of Earth, Atmosphere, and Environment*
 
  
 
@@ -109,4 +109,9 @@ To further investigate the bifurcated regions and the inference that there are t
 
 While the SOM did a sufficient job at classifying the various regimes and related practically perfect hindcast probabilities, it still has certain situations where it falls short. We extracted the maximum practically perfect event from the entire period and output the associated CAPE/CIN mean for that day (Fig 6). The results show that while the practically perfect probabilities were nearly maxed out, the environment was relatively low in CAPE. Upon further review of this case, which offered on April 12, 2020, across the Deep South, the relatively lower values of CAPE were compensated by extremely strong vertical wind shear. These types of cases, referred to as “high shear-low cape” are common in the Deep South and during the cool or transition season. Significant severe weather is still allowed to occur because the amount of vertical wind shear is strong enough to induce tilting and rotating of updrafts, even though they tend to be more low-topped and less robust. This allows us to produce significant severe perils, typically tornadoes, despite the low thermodynamic energy available.  Since this project only clustered based on CAPE and CIN, it did not account for events where vertical wind shear may dominate and thus, despite higher practically perfect probabilities, they are assigned to comparatively lower practically perfect probability and weaker environmental nodes (Fig 6).
 
+<p align="center">
+  <img src="Fig6.png" width="700">
+  <br>
+  <em>Fig. 6</em>
+</p>
 
