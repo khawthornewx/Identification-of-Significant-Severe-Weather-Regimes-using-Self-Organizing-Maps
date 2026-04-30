@@ -74,7 +74,7 @@ Once the environmental SOM nodes are plotted, we then plot the mean practically 
 The resulting environmental 5x5 SOM output shows ascending volatility in CAPE and CIN magnitude from the bottom row to the top row (Fig 2). Since we do not mask the oceans, high values of CAPE over warm and humid water surface results in a SOM where mean CAPE value increases from the bottom leftmost node to the top rightmost node (Fig 3). CIN has a more heterogenous distribution throughout the SOM, with the highest mean CIN value residing in the top left corner, generally increasing towards the bottom rightmost corner (Fig 3). 
 
 <p align="center">
-  <img src="Figres/Figure 2a.png" width="700">
+  <img src="Figures/Figure 2a.png" width="700">
   <br>
   <em>Fig. 2a</em>
 </p>
