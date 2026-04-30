@@ -53,3 +53,8 @@ While other environmental parameters are certainly important to produce signific
 *c. Self-Organizing Maps (SOMs)* 
 
 A self-organizing map (SOM) is used in this study to identify and group similar severe weather environments into a set of representative regimes (Kohonen, 1982). SOMs are an unsupervised machine learning technique that reduces high-dimensional data into a lower-dimensional grid while preserving the underlying structure of the dataset (Fig. 1; Kohonen, 1982). In this application, environmental variables are used as inputs, allowing the SOM to cluster similar atmospheric setups without imposing any predefined categories.
+
+![Description of image](SOM_Fig.jpg)
+
+
+
