@@ -55,7 +55,7 @@ While other environmental parameters are certainly important to produce signific
 A self-organizing map (SOM) is used in this study to identify and group similar severe weather environments into a set of representative regimes (Kohonen, 1982). SOMs are an unsupervised machine learning technique that reduces high-dimensional data into a lower-dimensional grid while preserving the underlying structure of the dataset (Fig. 1; Kohonen, 1982). In this application, environmental variables are used as inputs, allowing the SOM to cluster similar atmospheric setups without imposing any predefined categories.
 
 <p align="center">
-  <img src="SOM_Fig.jpg" width="700">
+  <img src="Figures/Figure 1.jpg" width="700">
   <br>
   <em>Fig. 1 Input features are seleced and fed into the self-organizing map that then clusters each feature into “nodes” that represent a mean of all cases in that node. Figure from Kohonen, 1982. The same process is applied to this project where atmospheric variables are input features, and they are organized by like case</em>
 </p>
@@ -74,19 +74,19 @@ Once the environmental SOM nodes are plotted, we then plot the mean practically 
 The resulting environmental 5x5 SOM output shows ascending volatility in CAPE and CIN magnitude from the bottom row to the top row (Fig 2). Since we do not mask the oceans, high values of CAPE over warm and humid water surface results in a SOM where mean CAPE value increases from the bottom leftmost node to the top rightmost node (Fig 3). CIN has a more heterogenous distribution throughout the SOM, with the highest mean CIN value residing in the top left corner, generally increasing towards the bottom rightmost corner (Fig 3). 
 
 <p align="center">
-  <img src="Som_Out.png" width="700">
+  <img src="Figres/Figure 2a.png" width="700">
   <br>
   <em>Fig. 2a</em>
 </p>
 
 <p align="center">
-  <img src="PPH_Out.png" width="700">
+  <img src="Figures/Figure 2b.png" width="700">
   <br>
   <em>Fig. 2b</em>
 </p>
 
 <p align="center">
-  <img src="CAPE_CIN_NodeFrq.jpg" width="700">
+  <img src="Figures/Figure 3.png" width="700">
   <br>
   <em>Fig. 3</em>
 </p>
@@ -94,7 +94,7 @@ The resulting environmental 5x5 SOM output shows ascending volatility in CAPE an
 The practically perfect SOM matches well to the environmental SOM in that the lowest occurrence of significant severe weather occurs in the bottom row of nodes while the highest occurrence of significant severe weather occurs in the top row. The best node for significant severe weather occurs at node 1,3 and this matches the most significant severe practically perfect probability (Fig 4). Node 1,3 shows a bifurcated maximum in significant severe practically perfect probabilities with the first being over the central and southern Great Plains while the second extends from the Deep South to the Ohio Valley. The environmental node from 1,3 shows high CAPE with >-50 J/kg of CIN over the Deep South and Ohio Valley sector while the Great Plains sectors show high CAPE and <-50 J/kg of CIN. Regardless, both regions produced significant severe, indicating that the model is picking up on two different types of significant severe weather setups. The first type of set-up, which aligns with the Central Great Plains, is likely indicative of supercellular events where the largest contribution to significant severe reports is hail and tornadoes. The second type of set-up, which is in the Deep South and Ohio Valley, is likely showing more QLCS, MCS, and derecho type setups where much of the contribution is likely from significant tornadoes and wind. 
 
 <p align="center">
-  <img src="Best_Node.png" width="700">
+  <img src="Figures/Figure 4.png" width="700">
   <br>
   <em>Fig. 4</em>
 </p>
@@ -102,7 +102,7 @@ The practically perfect SOM matches well to the environmental SOM in that the lo
 To further investigate the bifurcated regions and the inference that there are two different “types” of outbreaks, a mean is taken from every environmental node and every practically perfect node (Fig 5). This is essentially serving as a “climatology” for the entire period. This climatology also demonstrates the two primary hotspots, and the eastern hotspot shows higher CAPE with weaker CIN while the western hotspot shows higer CAPE and stronger CIN. While both regimes produce nearly equal to significant severe weather, the methods from which they produce these significant severe perils are different. As mentioned before, the Plains hotspot likely shows supercell associated events while the Deep South and Ohio Valley hotspot likely shows QLCS/MCS associated events. Future work should physically run the total significant severe probabilities for each individual peril to confirm this hypothesis.
 
 <p align="center">
-  <img src="Hotspots.png" width="700">
+  <img src="Figures/Figure 5.png" width="700">
   <br>
   <em>Fig. 5</em>
 </p>
@@ -110,7 +110,7 @@ To further investigate the bifurcated regions and the inference that there are t
 While the SOM did a sufficient job at classifying the various regimes and related practically perfect hindcast probabilities, it still has certain situations where it falls short. We extracted the maximum practically perfect event from the entire period and output the associated CAPE/CIN mean for that day (Fig 6). The results show that while the practically perfect probabilities were nearly maxed out, the environment was relatively low in CAPE. Upon further review of this case, which offered on April 12, 2020, across the Deep South, the relatively lower values of CAPE were compensated by extremely strong vertical wind shear. These types of cases, referred to as “high shear-low cape” are common in the Deep South and during the cool or transition season. Significant severe weather is still allowed to occur because the amount of vertical wind shear is strong enough to induce tilting and rotating of updrafts, even though they tend to be more low-topped and less robust. This allows us to produce significant severe perils, typically tornadoes, despite the low thermodynamic energy available.  Since this project only clustered based on CAPE and CIN, it did not account for events where vertical wind shear may dominate and thus, despite higher practically perfect probabilities, they are assigned to comparatively lower practically perfect probability and weaker environmental nodes (Fig 6).
 
 <p align="center">
-  <img src="Fig6.png" width="700">
+  <img src="Figures/Figure 6.png" width="700">
   <br>
   <em>Fig. 6</em>
 </p>
