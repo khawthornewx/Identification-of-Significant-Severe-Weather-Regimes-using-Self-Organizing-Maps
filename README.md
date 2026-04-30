@@ -96,7 +96,7 @@ The practically perfect SOM matches well to the environmental SOM in that the lo
 To further investigate the bifurcated regions and the inference that there are two different “types” of outbreaks, a mean is taken from every environmental node and every practically perfect node (Fig 5). This is essentially serving as a “climatology” for the entire period. This climatology also demonstrates the two primary hotspots, and the eastern hotspot shows higher CAPE with weaker CIN while the western hotspot shows higer CAPE and stronger CIN. While both regimes produce nearly equal to significant severe weather, the methods from which they produce these significant severe perils are different. As mentioned before, the Plains hotspot likely shows supercell associated events while the Deep South and Ohio Valley hotspot likely shows QLCS/MCS associated events. Future work should physically run the total significant severe probabilities for each individual peril to confirm this hypothesis.
 
 <p align="center">
-  <img src="Best_Node.png" width="700">
+  <img src="Hotspots.png" width="700">
   <br>
-  <em>Fig. 4</em>
+  <em>Fig. 5</em>
 </p>
