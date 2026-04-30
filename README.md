@@ -54,7 +54,49 @@ While other environmental parameters are certainly important to produce signific
 
 A self-organizing map (SOM) is used in this study to identify and group similar severe weather environments into a set of representative regimes (Kohonen, 1982). SOMs are an unsupervised machine learning technique that reduces high-dimensional data into a lower-dimensional grid while preserving the underlying structure of the dataset (Fig. 1; Kohonen, 1982). In this application, environmental variables are used as inputs, allowing the SOM to cluster similar atmospheric setups without imposing any predefined categories.
 
-![Description of image](SOM_Fig.jpg)
+<p align="center">
+  <img src="SOM_Fig.jpg" width="700">
+  <br>
+  <em>Fig. 1 Input features are seleced and fed into the self-organizing map that then clusters each feature into “nodes” that represent a mean of all cases in that node. Figure from Kohonen, 1982. The same process is applied to this project where atmospheric variables are input features, and they are organized by like case</em>
+</p>
 
+Each node in the SOM represents a characteristic environment, with nearby nodes corresponding to similar patterns and more distant nodes representing increasingly different regimes. This structure makes SOMs particularly useful for meteorological applications, as they provide a physically interpretable way to organize complex environmental variability. Rather than identifying a single “type” of severe weather environment, the SOM highlights a spectrum of regimes that capture different combinations of moisture, forcing, and stability.
+By applying a SOM to the CONUS404-derived environmental fields, this study aims to identify recurring patterns associated with significant severe weather and provide a structured framework for interpreting how these environments vary across space and time.
 
+*d.	Model Configuration*
 
+Each SOM is tuned with a set of parameters that control how the model learns and clusters the feature input data. For this project, our parameters were selected arbitrarily through an iterative process, each time evaluating the visual practicality of the SOM output. At the concluding iteration (used in this study) we select a learning rate of 1, a sigma of 2, and 4000 n_iterations. The SOM grid is 5x5, which will result in 25 unique nodes. 
+Preprocessing is done using the sklearn built in “StandardScalar” package which flattens data and converts it to z-score. Once the data is converted to z-score, the data is fed into the som training, which is coded using the sklearn “MiniSom” package. The output is then plotted by reconverting the data back to unstandardized values and plotted as a 5x5 group of subplots containing mean environmental inputs, each containing n number of dates from throughout the period. 
+Once the environmental SOM nodes are plotted, we then plot the mean practically perfect nodes by extracting the dates from the environmental nodes and applying the same dates from the practically perfect dataset to the corresponding nodes. The resultant plot is a similar 5x5 group of subplots with mean practically perfect probabilities. These can then be compared against the environmental SOM nodes, and subsequent analysis can be conducted. 
+
+  ## **III. Results** ##
+
+The resulting environmental 5x5 SOM output shows ascending volatility in CAPE and CIN magnitude from the bottom row to the top row (Fig 2). Since we do not mask the oceans, high values of CAPE over warm and humid water surface results in a SOM where mean CAPE value increases from the bottom leftmost node to the top rightmost node (Fig 3). CIN has a more heterogenous distribution throughout the SOM, with the highest mean CIN value residing in the top left corner, generally increasing towards the bottom rightmost corner (Fig 3). 
+
+<p align="center">
+  <img src="Som_Out.png" width="700">
+  <br>
+  <em>Fig. 2</em>
+</p>
+
+<p align="center">
+  <img src="CAPE_CIN_NodeFrq.jpg" width="700">
+  <br>
+  <em>Fig. 3</em>
+</p>
+
+The practically perfect SOM matches well to the environmental SOM in that the lowest occurrence of significant severe weather occurs in the bottom row of nodes while the highest occurrence of significant severe weather occurs in the top row. The best node for significant severe weather occurs at node 1,3 and this matches the most significant severe practically perfect probability (Fig 4). Node 1,3 shows a bifurcated maximum in significant severe practically perfect probabilities with the first being over the central and southern Great Plains while the second extends from the Deep South to the Ohio Valley. The environmental node from 1,3 shows high CAPE with >-50 J/kg of CIN over the Deep South and Ohio Valley sector while the Great Plains sectors show high CAPE and <-50 J/kg of CIN. Regardless, both regions produced significant severe, indicating that the model is picking up on two different types of significant severe weather setups. The first type of set-up, which aligns with the Central Great Plains, is likely indicative of supercellular events where the largest contribution to significant severe reports is hail and tornadoes. The second type of set-up, which is in the Deep South and Ohio Valley, is likely showing more QLCS, MCS, and derecho type setups where much of the contribution is likely from significant tornadoes and wind. 
+
+<p align="center">
+  <img src="Best_Node.png" width="700">
+  <br>
+  <em>Fig. 4</em>
+</p>
+
+To further investigate the bifurcated regions and the inference that there are two different “types” of outbreaks, a mean is taken from every environmental node and every practically perfect node (Fig 5). This is essentially serving as a “climatology” for the entire period. This climatology also demonstrates the two primary hotspots, and the eastern hotspot shows higher CAPE with weaker CIN while the western hotspot shows higer CAPE and stronger CIN. While both regimes produce nearly equal to significant severe weather, the methods from which they produce these significant severe perils are different. As mentioned before, the Plains hotspot likely shows supercell associated events while the Deep South and Ohio Valley hotspot likely shows QLCS/MCS associated events. Future work should physically run the total significant severe probabilities for each individual peril to confirm this hypothesis.
+
+<p align="center">
+  <img src="Best_Node.png" width="700">
+  <br>
+  <em>Fig. 4</em>
+</p>
