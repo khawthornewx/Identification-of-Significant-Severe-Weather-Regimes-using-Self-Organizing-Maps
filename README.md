@@ -158,13 +158,27 @@ Sobash, R. A., J. S. Kain, D. R. Bright, A. R. Dean, M. C. Coniglio, and S. J. W
 Trapp, R. J., G. J. Stumpf, and K. L. Manross, 2005: A reassessment of the percentage of tornadic mesocyclones. Wea. Forecasting, 20, 680–687, doi:10.1175/WAF864.1.
 
 ## **Supplemental Workflow Information** ##
-# *Packages Used:* #
+### *Packages Used:* ###
 **Xarray** for gridded data interrogation
+
 **Numpy** for numeric manipulation
+
 **Matplotlib** for simple data visualization
+
 **Sklearn StandardScalar** for SOM preprocessing
+
 **Sklearn RobustScalar** for SOM preprocessing
+
 **Sklearn MinMaxScalar** for SOM preprocessing
+
 **Sklearn MiniSom** for SOM Training
+
 **Cartopy** for plotting gridded data geographically
+
+### *Notebooks and Notebook Descriptions* ###
+**Data Warngling and Processing** This notebook available in the "Project Code" folder on the main page is used to creat the necessary datasets to be used in this project. This project uses North American Regional Reanalysis (NARR) and combines by downloading each individual yearly file and merging using xarray but other datasets can be used a processed accordingly. 
+
+**Environments_SOM_Plot** This notebook is used to plot the results of the main SOM (of environmental inputs). As is, it is a 5x5 SOM with 25 unique environmental nodes. These settings can be modulated when actually running the SOM. Other, asthetic changes can be made using the code in this notebook.
+
+**SOM Preprocessing and Training** Notebook is used to preprocess and train the SOM using packages outlined above. This is where all changes relating to the way the SOM is run are made. These knobs may need to be tweaked based on the data being input. Remember, preprocessing to standarize the data must be done before the SOM is trained and converted back after the SOM is trained and before plotting. 
 
