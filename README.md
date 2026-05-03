@@ -117,3 +117,41 @@ This study concludes that the overlap of CAPE and CIN can bring us closer to ide
 While CAPE remains one of the strongest indicators of thunderstorm development because it serves as a proxy for atmospheric instability, there is substantial evidence that CIN also plays a role in the production of significant severe hazards in certain environments. Environments with little CIN tend to over-convect, which can lead to lower hazard production compared to more discrete storm modes. Conversely, linear storm modes can produce more intense hazards in environments with little CIN. This again highlights the idea that the marriage of these ingredients, along with many additional variables not discussed here, is what ultimately leads to the production of significant severe weather. Furthermore, these relationships may vary by region, season, and even time of day.
 
 Despite these limitations, future work may use this workflow to address the same research questions with a more extensive set of variables or over a longer climatological period. Additionally, other machine learning techniques (e.g., Random Forests) may better predict regimes rather than provide only broad classifications. Overall, there remains substantial opportunity for future work examining severe convective storms using machine learning techniques. However, the most important prerequisite is recognizing that no methodology will produce perfect results given current observational and data limitations.
+
+## **References** ##
+Ashley, W. S., A. M. Haberlie, and V. A. Gensini, 2023: The future of supercells in the United States. Bull. Amer. Meteor. Soc., 104, E1–E21, doi:10.1175/BAMS-D-22-0027.1.
+
+Ashley, W. S., A. M. Haberlie, and J. Strohm, 2019: A climatology of quasi-linear convective systems and their hazards in the United States. Wea. Forecasting, 34, 1605–1631, doi:10.1175/WAF-D-19-0014.1.
+
+Bluestein, H. B., and S. S. Parker, 1993: Modes of isolated, severe convective storm formation along the dryline. Mon. Wea. Rev., 121, 1354–1372, doi:10.1175/1520-0493(1993)121<1354:MOISCS>2.0.CO;2.
+
+Chalmers, Z. A., and M. D. Parker, 2026: Variability in high-shear, low-CAPE QLCS environments in the southeastern U.S. Wea. Forecasting, in press, doi:10.1175/WAF-D-25-0137.1.
+
+Davenport, C. E., 2021: Environmental evolution of long-lived supercell thunderstorms in the Great Plains. Wea. Forecasting, 36, 2187–2209, doi:10.1175/WAF-D-21-0042.1.
+
+Doswell, C. A., 1987: The distinction between large-scale and mesoscale contribution to severe convection: A case study example. Wea. Forecasting, 2, 3–16, doi:10.1175/1520-0434(1987)002<0003:TDBLSA>2.0.CO;2.
+
+Doswell, C. A., H. E. Brooks, and R. A. Maddox, 1996: Flash flood forecasting: An ingredients-based methodology. Wea. Forecasting, 11, 560–581, doi:10.1175/1520-0434(1996)011<0560:FFFAIB>2.0.CO;2.
+
+Gensini, V. A., A. M. Haberlie, and P. T. Marsh, 2020: Practically perfect hindcasts of severe convective storms. Bull. Amer. Meteor. Soc., 101, E1259–E1278, doi:10.1175/BAMS-D-19-0321.1.
+
+Haberlie, A. M., and W. S. Ashley, 2019: A radar-based climatology of mesoscale convective systems in the United States. J. Climate, 32, 1591–1606, doi:10.1175/JCLI-D-18-0559.1.
+
+Hitchens, N. M., H. E. Brooks, and M. P. Kay, 2013: Objective limits on forecasting skill of rare events. Wea. Forecasting, 28, 525–534, doi:10.1175/WAF-D-12-00113.1.
+
+Homeyer, C. R., E. M. Murillo, and M. R. Kumjian, 2023: Relationships between 10 years of radar-observed supercell characteristics and hail potential. Mon. Wea. Rev., 151, 2609–2632, doi:10.1175/MWR-D-23-0019.1.
+
+Johns, R. H., and C. A. Doswell, 1992: Severe local storms forecasting. Wea. Forecasting, 7, 588–612, doi:10.1175/1520-0434(1992)007<0588:SLSF>2.0.CO;2.
+
+Kaminski, K., W. S. Ashley, A. M. Haberlie, and V. A. Gensini, 2024: Future derecho potential in the United States. J. Climate, 38, 3–26, doi:10.1175/JCLI-D-23-0633.1.
+
+Kohonen, T., 1982: Self-organized formation of topologically correct feature maps. Biol. Cybern., 43, 59–69, doi:10.1007/BF00337288.
+
+Mesinger, F., and Coauthors, 2006: North American regional reanalysis. Bull. Amer. Meteor. Soc., 87, 343–360, doi:10.1175/BAMS-87-3-343.
+
+Sherburn, K. D., and M. D. Parker, 2014: Climatology and ingredients of significant severe convection in high-shear, low-CAPE environments. Wea. Forecasting, 29, 854–877, doi:10.1175/WAF-D-13-00041.1.
+
+Sobash, R. A., J. S. Kain, D. R. Bright, A. R. Dean, M. C. Coniglio, and S. J. Weiss, 2011: Probabilistic forecast guidance for severe thunderstorms based on the identification of extreme phenomena in convection-allowing model forecasts. Wea. Forecasting, 26, 714–728, doi:10.1175/WAF-D-10-05046.1.
+
+Trapp, R. J., G. J. Stumpf, and K. L. Manross, 2005: A reassessment of the percentage of tornadic mesocyclones. Wea. Forecasting, 20, 680–687, doi:10.1175/WAF864.1.
+
