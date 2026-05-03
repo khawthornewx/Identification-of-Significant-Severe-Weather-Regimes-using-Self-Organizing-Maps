@@ -5,6 +5,8 @@
 
 *<sup>a</sup> Northern Illinois University, Department of Earth, Atmosphere, and Environment*
 
+*Corresponding Author: Kelvin Hawthorne (khawthorne2@niu.edu)*
+
  
 
 *Conducted in partial completion of the course requirements for EAE 483/583, Data Science for the Geosciences*
