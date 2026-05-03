@@ -155,3 +155,14 @@ Sobash, R. A., J. S. Kain, D. R. Bright, A. R. Dean, M. C. Coniglio, and S. J. W
 
 Trapp, R. J., G. J. Stumpf, and K. L. Manross, 2005: A reassessment of the percentage of tornadic mesocyclones. Wea. Forecasting, 20, 680–687, doi:10.1175/WAF864.1.
 
+## **Supplemental Workflow Information** ##
+# *Packages Used:* #
+**Xarray** for gridded data interrogation
+**Numpy** for numeric manipulation
+**Matplotlib** for simple data visualization
+**Sklearn StandardScalar** for SOM preprocessing
+**Sklearn RobustScalar** for SOM preprocessing
+**Sklearn MinMaxScalar** for SOM preprocessing
+**Sklearn MiniSom** for SOM Training
+**Cartopy** for plotting gridded data geographically
+
